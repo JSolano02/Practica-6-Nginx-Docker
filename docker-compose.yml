@@ -1,0 +1,9 @@
+# Práctica 6: Nginx con Docker Compose
+services:
+  nginx:
+    image: nginx:stable-alpine
+    container_name: practica6-nginx
+    ports:
+      - "8080:80"            # PC:contenedor
+    volumes:
+      - ./src:/usr/share/nginx/html:ro  # Carpeta local:carpeta Nginx (solo lectura)

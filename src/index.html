@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practica 6: servidor web Nginx con Docker Compose.">
+  <title>Práctica 6 | Hola Mundo con Nginx</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: #f1f5f9;
+      background: radial-gradient(circle at 15% 20%, #183454 0, transparent 42%),
+                  linear-gradient(135deg, #091323, #0c1b32);
+    }
+
+    main {
+      width: min(100%, 660px);
+      padding: clamp(28px, 7vw, 56px);
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      border-radius: 24px;
+      background: rgba(17, 34, 57, 0.82);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+      text-align: center;
+    }
+
+    .label {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 999px;
+      color: #7dd3fc;
+      background: rgba(14, 165, 233, 0.11);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 24px 0 10px;
+      font-size: clamp(2.8rem, 9vw, 5rem);
+      letter-spacing: -0.06em;
+      line-height: 1.05;
+    }
+
+    h1 span { color: #38bdf8; }
+
+    p {
+      max-width: 480px;
+      margin: 16px auto 0;
+      color: #cbd5e1;
+      font-size: 1.08rem;
+      line-height: 1.65;
+    }
+
+    .details {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .details span {
+      padding: 10px 14px;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 10px;
+      background: #132840;
+      color: #e2e8f0;
+      font-size: 0.92rem;
+    }
+
+    footer {
+      margin-top: 34px;
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="label">Práctica 6 · DevOps</div>
+    <h1>¡Hola <span>Mundo!</span></h1>
+    <p>Mi servidor web <strong>Nginx</strong> está ejecutándose localmente con <strong>Docker Compose</strong>.</p>
+    <div class="details" aria-label="Tecnologías utilizadas">
+      <span>Docker</span>
+      <span>Nginx</span>
+      <span>HTML</span>
+      <span>Puerto 8080</span>
+    </div>
+    <footer>Servidor web de prueba · Proyecto académico</footer>
+  </main>
+</body>
+</html>
